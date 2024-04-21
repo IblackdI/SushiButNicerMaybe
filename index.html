@@ -1,0 +1,141 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WRAPN'ROLL</title>
+		<link rel="stylesheet" href="styles.css" />
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#menu">Menu</a></li>
+				<li><a href="#contacts">Contacts</a></li>
+			</ul>
+		</nav>
+		<header id="home">
+			<h1>WRAPN'ROLL</h1>
+			<img src="sushi-background.png" />
+		</header>
+		<main>
+			<section class="about" id="about">
+				<h2>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam,
+					ipsum quisquam at blanditiis perferendis sunt illum qui, molestias
+					cum, veniam maxime fugit fugiat vitae odit! Mollitia quis blanditiis
+					illo ad.
+				</h2>
+			</section>
+			<section class="menu" id="menu">
+				<div class="buttons">
+					<button
+						type="button"
+						id="rolls"
+						onclick="menuChange(id)"
+						style="
+							background-image: url(button.png);
+							background-size: 100% 100%;
+						"
+					>
+						ROLLS
+					</button>
+					<button type="button" id="hosomaki" onclick="menuChange(id)">
+						HOSOMAKI
+					</button>
+					<button type="button" id="nigiri" onclick="menuChange(id)">
+						NIGIRI
+					</button>
+					<button type="button" id="gunkan" onclick="menuChange(id)">
+						GUNKAN
+					</button>
+				</div>
+				<div class="cards rolls">
+					<div class="item">
+						<img src="sushi.jpg" />
+						<p>Cream cheese, avocado, salmon, tuna(marinad), mayo</p>
+					</div>
+					<div class="item">
+						<img src="sushi.jpg" />
+						<p>Cream cheese, cucumber, salmon(teriyaki), tuna flake</p>
+					</div>
+					<div class="item">
+						<p>Cucumber, avocado, eel, shrimp, sesame, eel sauce</p>
+						<img src="sushi.jpg" />
+					</div>
+					<div class="item">
+						<p>Cream cheese, cucumber, sushi radish, eel, sesame, eel sauce</p>
+						<img src="sushi.jpg" />
+					</div>
+				</div>
+				<div class="cards hosomaki" style="display: none">
+					<div class="item">
+						<img src="hosomaki.jpeg" />
+						<p>Cucumber, sesame</p>
+					</div>
+					<div class="item">
+						<img src="hosomaki.jpeg" />
+						<p>Avocado, sesame, balsamic sauce</p>
+					</div>
+					<div class="item">
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+						<img src="hosomaki.jpeg" />
+					</div>
+					<div class="item">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+						<img src="hosomaki.jpeg" />
+					</div>
+				</div>
+				<div class="cards nigiri" style="display: none">
+					<div class="item">
+						<img src="nigiri.jpg" />
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+					</div>
+					<div class="item">
+						<img src="nigiri.jpg" />
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+					</div>
+					<div class="item">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+						<img src="nigiri.jpg" />
+					</div>
+					<div class="item">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+						<img src="nigiri.jpg" />
+					</div>
+				</div>
+				<div class="cards gunkan" style="display: none">
+					<div class="item">
+						<img src="gunkan.webp" />
+						<p>Salmon, spicy mayo, tobico</p>
+					</div>
+					<div class="item">
+						<img src="gunkan.webp" />
+						<p>Tuna, spicy mayo, tobico</p>
+					</div>
+					<div class="item">
+						<p>Eel, spicy mayo, tobico</p>
+						<img src="gunkan.webp" />
+					</div>
+					<div class="item">
+						<p>Shrimp, spicy mayo, tobico</p>
+						<img src="gunkan.webp" />
+					</div>
+				</div>
+			</section>
+			<secion class="contacts" id="contacts"
+				><h2>
+					23a Bow St., Somerville, MA.<br />
+					HOURS<br />
+					Wed-Thu 5 to 9 - bar until 10 PM<br />
+					Fri & Sat 5 to 10 - bar until 11 PM<br />
+					Sun 12 to 8 PM - bar until 9 PM<br />
+					Monday and Tuesday closed
+				</h2>
+				<img src="map.png"
+			/></secion>
+		</main>
+	</body>
+</html>
